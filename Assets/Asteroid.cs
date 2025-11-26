@@ -41,7 +41,7 @@ public class Asteroid : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Game Over");
+            GameOverManager.instance.GameOver(ScoreManager.instance.score);
         }
     }
 
