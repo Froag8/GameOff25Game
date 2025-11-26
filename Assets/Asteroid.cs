@@ -33,6 +33,7 @@ public class Asteroid : MonoBehaviour
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
+            ScoreManager.instance.AddScore(1);
         }
     }
 
