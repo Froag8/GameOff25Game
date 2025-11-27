@@ -8,6 +8,7 @@ public class GameOverManager : MonoBehaviour
 
     public GameObject gameOverUI;
     public TMP_Text finalScoreText;
+    public GameObject scoreText;
 
     void Awake()
     {
@@ -19,6 +20,7 @@ public class GameOverManager : MonoBehaviour
         Time.timeScale = 0f;
         gameOverUI.SetActive(true);
         finalScoreText.text = "Score: " + score;
+        scoreText.SetActive(false);
     }
 
     public void Replay()
